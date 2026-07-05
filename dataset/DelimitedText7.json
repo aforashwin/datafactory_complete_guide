@@ -1,18 +1,21 @@
 {
-	"name": "DelimitedText9",
+	"name": "DelimitedText7",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer3",
+			"referenceName": "HttpServer1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "anshlambagit/Azure-Data-Factory/refs/heads/main/Raw%20Data/Fact_Sales_1.csv",
+					"type": "Expression"
+				}
 			},
 			"columnDelimiter": ",",
-			"rowDelimiter": "\n",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""

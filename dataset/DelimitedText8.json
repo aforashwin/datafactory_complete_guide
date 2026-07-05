@@ -1,18 +1,19 @@
 {
-	"name": "DelimitedText9",
+	"name": "DelimitedText8",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "HttpServer3",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "AzureBlobFSLocation",
+				"folderPath": "files",
+				"fileSystem": "source"
 			},
 			"columnDelimiter": ",",
-			"rowDelimiter": "\n",
 			"escapeChar": "\\",
 			"firstRowAsHeader": true,
 			"quoteChar": "\""
