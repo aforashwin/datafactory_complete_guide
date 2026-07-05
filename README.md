@@ -1,2 +1,2 @@
-# datafactory_complete_guide
-data factory complete course practice session
+# datafactory_basic_guide
+data factory basic course practice session
