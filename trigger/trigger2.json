@@ -6,20 +6,19 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "dynamic_pipeline",
+					"referenceName": "storage_based_trigger_pipeline",
 					"type": "PipelineReference"
 				}
 			}
 		],
-		"type": "ScheduleTrigger",
+		"type": "BlobEventsTrigger",
 		"typeProperties": {
-			"recurrence": {
-				"frequency": "Minute",
-				"interval": 15,
-				"startTime": "2026-07-05T12:42:00",
-				"endTime": "2026-07-06T07:09:00",
-				"timeZone": "India Standard Time"
-			}
+			"blobPathBeginsWith": "/source/blobs/files/Fact_Sales_1.csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/3d10deed-07e6-4ec1-8b62-fc4014fb87d8/resourceGroups/practice-azure/providers/Microsoft.Storage/storageAccounts/practiceazure",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
 		}
 	}
 }
