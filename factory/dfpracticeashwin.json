@@ -1,0 +1,15 @@
+{
+	"name": "dfpracticeashwin",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "c2e31d1f-5600-4e64-a6b7-1a95e7c76faa",
+		"tenantId": "ace4e35f-8484-4ca2-a71f-f55a764ea283"
+	}
+}
